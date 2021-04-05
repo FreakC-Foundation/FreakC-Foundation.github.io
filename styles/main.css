@@ -1,0 +1,141 @@
+
+body{
+	margin: 0;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+	border-right:1px solid #bbb;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+
+
+iframe {
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+	border:none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+iframe:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
+}
+
+.yt-box{
+	margin-top:5%;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 20px;
+	text-decoration: none;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: 0.6s ease-in-out;
+	cursor: pointer;
+}
+
+li a:hover{
+	color: #333;
+	background-color: lightgray;
+}
+
+img {
+	margin-top:5%;
+}
+
+.quote{
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.4;
+	color:rgb(122, 122, 122);
+	font-family: 'pacificoregular';
+}
+
+.smallcontent{
+	margin-top: 5%;
+	width: 50%;
+	font-size: 20px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 1% 2.1%;
+	border:none;
+	background-color:rgb(70, 64, 64);
+	color:white;
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+	font-family: 'Cinzel', serif;
+    font-family: 'Dancing Script', cursive;
+    width: 150px;
+    height: 60px;
+    max-width: 150px;
+    max-height: 60px;
+}
+
+button:hover{
+	border-radius:50px;
+	background-color: white;
+	color:#544E4F;
+	text-decoration: none;
+	border:#413839;
+}
+
+* {
+	animation: fadeIn ease 0.5s;
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+.header {
+	font-family: 'pacificoregular';
+	font-size:100px;
+	margin-top:10%;
+	color:#333;
+	text-shadow: 2px 2px 4px ;
+}
+
+.codebox{
+	background-color: white;
+	padding:1%;
+	width: 40%;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.codebox:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:50%;
+	margin-left:1%;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.logo:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
+}
