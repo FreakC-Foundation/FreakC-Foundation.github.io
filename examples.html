@@ -31,18 +31,16 @@
 			<div class="ex1">
 			<p align="left" style='width: 42%'>HelloWorld.fclang</p>
 			<div class='codebox' align="left" onclick="scale('.ex1')">
-				<span style="color:#e53840; ">print[]</span> Hello, World^!
+				<span style="color:#e53840; ">print[]</span> Hello, World
 			</div>
 			</div>
 			<br/><br/><br/><br/>
 			<div class="ex2">
 			<p align="left" style='width: 42%'>Calculator.fclang</p>
 			<div class='codebox' align="left" onclick="scale('.ex2')">
-				<span style="color:#433b80; ">label[]</span> menu
-				<br/>
 				<span style="color:#e53840; ">clrscr[]</span>
 				<br/>
-				<span style="color:#e53840; ">print[]</span>     Enter your Math problem:
+				<span style="color:#e53840; ">print[]</span> Enter your Math problem:
 				<br/>
 				<span style="color:#433b80; ">inp[]</span> prob=
 				<br/>
@@ -52,52 +50,23 @@
 				<br/>
 				<span style="color:#433b80; ">stop[]</span>
 				<br/>
-				<span style="color:#433b80; ">goto[]</span> menu
+				<span style="color:#10008d; ">inf_loop[]</span>
 			</div>
 			</div><br/><br/><br/><br/>
 			<div class="ex3">
 			<p align="left" style='width: 42%'>Fizzbuzz.fclang</p>
 		<div class='codebox' align="left" onclick="scale('.ex3')">
-			<span style="color:#e53840; ">eq[]</span> count=1
-			<br/>
-			<span style="color:#433b80; ">label[]</span> loop
-			<br/>
-			<span style="color:#5246ab; ">if_not[]</span> %count% <span style="color:#e74c3c; ">LSS</span> 101 (
-			<br/>
-				&#160;&#160;<span style="color:#433b80; ">goto[]</span> end
-				<br/>
-			) 
-			<br/>
-			<span style="color:#433b80; ">eq[]</span> fizzbuzz=%count% <span style="color:#e74c3c; ">%%</span> 15
-			<br/>
-			<span style="color:#433b80; ">eq[]</span> fizz=%count% <span style="color:#e74c3c; ">%%</span> 3
-			<br/>
-			<span style="color:#433b80; ">eq[]</span> buzz=%count% <span style="color:#e74c3c; ">%%</span> 5
-			<br/>
-			<span style="color:#5246ab; ">if[]</span> %fizzbuzz% <span style="color:#e74c3c; ">==</span> 0 (
-			<br/>
-				&#160;&#160;<span style="color:#e53840; ">print[]</span> FizzBuzz
-				<br/>
-			) <span style="color:#5246ab; ">el[]</span> <span style="color:#5246ab; ">if[]</span> %fizz% <span style="color:#e74c3c; ">==</span> 0 (
-			<br/>
-				&#160;&#160;<span style="color:#e53840; ">print[]</span> Fizz
-				<br/>
-			) <span style="color:#5246ab; ">el[]</span> <span style="color:#5246ab; ">if[]</span> %buzz% <span style="color:#e74c3c; ">==</span> 0 (
-			<br/>
-				&#160;&#160;<span style="color:#e53840; ">print[]</span> Buzz
-				<br/>
-			) <span style="color:#5246ab; ">el[]</span> (
-			<br/>
-				&#160;&#160;<span style="color:#e53840; ">print[]</span> %count%
-				<br/>
-			)
-			<br/>
-			<span style="color:#433b80; ">eq[]</span> count++
-			<br/>
-			<span style="color:#433b80; ">goto[]</span> loop
-			<br/>
-			<span style="color:#433b80; ">label[]</span> end
-			<br/>
+			<span style="color:#433b80; ">eq[]</span> count=0<br/>
+			<span style="color:#5246ab; ">while[]</span> %count% LSS 100<br/>
+			&#160;&#160;&#160;&#160;<span style="color:#433b80; ">eq[]</span> count++, a=count %% 15, b=count %% 3, c=count %% 5<br/>
+			&#160;&#160;&#160;&#160;<span style="color:#5246ab; ">if[]</span> %a% == 0 (<br/>
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#e53840; ">print[]</span> FizzBuzz<br/>
+			&#160;&#160;&#160;&#160;) <span style="color:#5246ab; ">elif[]</span> %b% == 0 (<br/>
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#e53840; ">print[]</span> Fizz<br/>
+			&#160;&#160;&#160;&#160;) <span style="color:#5246ab; ">elif[]</span> %c% == 0 (<br/>
+			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#e53840; ">print[]</span> Buzz<br/>
+			&#160;&#160;&#160;&#160;) <span style="color:#5246ab; ">el[]</span> <span style="color:#e53840; ">print[]</span> %count%<br/>
+			<span style="color:#5246ab; ">endwhile[]</span><br/>
 		</div>
 		</div>
 		<br/>
